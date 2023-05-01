@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Molle&familyOpen+Sans:wght@400;600;700;800&family=Shrikhand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: black;
+    overflow-x: visible;
+}
+
+
+
+button{
+    font-family: 'Open Sans';
+    background-color: #892be2;
+    border-radius: 8px;
+    padding: 5px 5rem;
+    color: #fff;
+    border: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.445);
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all .45s ease-in-out;
+}
+
+ button:hover{
+    box-shadow: 0 0 5px #892be2,
+    0 0 12px #892be2,
+    0 0 25px #802be2;
+}
+
+.first-container{
+    position: relative;
+    background: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2% 0;
+    
+}
+.first-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#0f0f0f46 , #000000d5 80%, #000000f3 95%);
+    
+}
+.text-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3.5% 20px;
+    padding-top: 2%;
+    font-family: 'Shrikhand', cursive;
+}
+.same{
+    width: 40%;
+}
+.text-container h1{
+    color: #fff;
+    width: 100%;
+    font-weight: 800;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-family: 'Shrikhand', cursive;
+}
+.text-container h1 span{
+    font-family: 'Shrikhand', cursive;
+    color: #892be2;
+}
+
+.enquadra {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    margin-bottom: 3%;
+}
+.enquadra img{
+    width: 55%;
+}
+ .linha{
+    width: 100%;
+    height: 2px;
+    background-color: #892be2;
+}
+
+
+
+                                        /* Second container styles */
+.second-container{
+    position: relative;
+    padding: 5% 3%;
+    background: #000;
+}
+
+
+
+.second-container .second-top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.second-container .text{
+    width: 33%;
+    border: 1px solid #892be2;
+    padding: 11px;
+    box-shadow: 2px 2px 4px #892be277;
+}
+
+.second-container .second-top .text p{
+    font-size: 1.25rem;
+    color: white;
+}
+
+.second-container .second-top .text p span{
+    color: #892be2;
+    font-weight: bold;
+}
+
+.second-container .second-top .list i{
+    color: white;
+    background: greenyellow;
+    padding: 4px 4px;
+    margin-right: 5px;
+}
+
+.second-container .second-top .list ul{
+    color: #fff;
+    list-style: none;
+    padding: 3px;
+    width: 100%;
+}
+
+.second-container .second-top .list ul li{
+    margin-bottom: 6px;
+}
+
+.second-bottom{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+.second-bottom .card{
+    width: 31%;
+    border: 1px solid #cccccc67;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    background-color: #000;
+    border-radius: 10px;
+    transition: border .35s ease-in-out;
+}
+
+
+.second-bottom .card:hover{
+    border: 1px solid #892be2;
+}
+.second-bottom .card h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.second-bottom .card h2{
+    color: white;
+    font-size: 2rem;
+    color: #892be2;
+    margin-bottom: 1rem;
+}
+
+.second-bottom p{
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    width: 99%;
+}
+
+.second-bottom::before{
+    position: absolute;
+    content: '';
+    height: 5px;
+    left: 2%;
+    right: 10%;
+    bottom:50%;
+    z-index: 0;
+    background-color: #892be2;
+}
+
+                 /*third container */
+
+.third-container {
+    position: relative;
+    background-color: #6425ac;
+}
+
+.third-container::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(20% at left 90%);
+    background-color: #fafafa42;
+}
+
+.third-container::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    clip-path: circle(20% at right 30%);
+    background-color: rgba(255, 255, 0, 0.493);
+}
+
+
+.third-container > h2{
+    padding: 3%;
+    padding-bottom: 0;
+    font-family: 'Shrikhand';
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    color: #fff;
+    
+}
+
+.box{
+    position: relative;
+    padding: 3%;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.box-image{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+    align-items: center;
+    
+}
+
+.box-image img{
+    border: 1px solid #892be2;
+    width: 60%;
+}
+
+.box-text{
+    width: 50%;
+    
+}
+
+.box-text h2{
+    font-family: 'Shrikhand';
+    text-transform: uppercase;
+    width: 45%;
+    margin-bottom: 1rem;
+    color: #fff;
+    
+}
+
+.box-text h2 span{
+    font-family: 'Shrikhand';
+    text-transform: uppercase;
+    color: #000;
+}
+
+.box-text p{
+    width: 35%;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.box-text p span{
+    font-weight: 600;
+}
+
+/* fourth container*/
+
+.fourth-container{
+    padding: 3%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+
+.fourth-container h2{
+    text-align: center;
+    width: 40%;
+    position: relative;
+    margin-bottom: 3rem;
+    font-family: 'Shrikhand';
+}
+
+.fourth-container h3{
+    font-weight: 800;
+    color: #892be2;
+    margin-bottom: 3rem;
+}
+
+.fourth-container h2 span{
+    display: block;
+    color: #892be2;
+    font-family: 'Shrikhand';
+}
+
+.fourth-container .cards-container{
+    position: relative;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.fourth-container .cards-container::before{
+    content: '';
+    position: absolute;
+    height: 85%;
+    width: 5px;
+    background-color: #802be2;
+}
+
+.fourth-container .cards-container .brilho {
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+    max-height: 100%;
+    top: 15%;
+}
+
+
+
+.fourth-container .card{
+    padding: 2% 1%;
+    width: 35%;
+    border: 1px solid #cccccc67;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: border 0.6s ease-in-out;
+    background-color: #000;
+}
+
+.fourth-container .card:hover{
+    border: 1px solid #802be2;
+}
+
+.fourth-container .card p{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    font-weight: 600;
+}
+
+
+
+                                                         /* FIVE Container */
+
+.five-container{
+    background: #fff;
+}
+
+.five-container p{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.five-container h2{
+    padding: 3%;
+    text-align: center;
+    font-family: 'Shrikhand';
+    font-size: 2.5rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.depoiment{
+    padding: 0 3%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.depoiment.purple{
+    background-color: #892be2;
+}
+
+.depoiment.purple .depoiment-text p{
+    color: #fff;
+    text-align: left;
+}
+
+.depoiment.purple .depoiment-image img{
+    transform: translateY(-5%);
+}
+
+.depoiment.purple .depoiment-text p{
+    transform: translateY(-7%);
+}
+
+.depoiment .depoiment-image{
+    width: 30%;
+}
+
+.depoiment .depoiment-image img{
+    margin-top: -20%;
+    max-height: 80vh;
+}
+
+.depoiment .depoiment-text{
+    width: 50%;
+}
+
+.depoiment .depoiment-text p{
+    width: 80%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+                                                     /*Six Container */
+                                                    
+.six-container{
+    padding: 3%;
+}
+.six-container .title-six{
+    font-size: 2rem;
+    text-align: center;
+    color: #fafafa;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+}
+.six-container .title-six h2{
+    font-family: 'Shrikhand';
+}
+.six-container .container-six{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.six-container .container-six .container-img{
+    min-width: 50%;
+}
+
+.six-container .container-six .container-img img{
+    width: 57%;
+}
+
+
+.six-container .container-six .container-text p{
+    font-size: 1.5rem;
+    width: 90%;
+    font-weight: 600;
+    color: #fafafa;
+}
+
+.six-container .box-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.six-container .box-button button{
+    width: 30%;
+}
+
+                                        /*SEVEN CONTAINER*/
+
+
+.seven-container{
+    padding: 3%;
+    background-color: #fafafa;
+}
+
+.seven-container .title-seven h2{
+    font-family: 'Shrikhand';
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.seven-container .quest{
+    position: relative;
+    background: #892be2;
+    padding: 1%;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.seven-container .quest .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+}
+
+.seven-container .quest .question span{
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border: 9px solid transparent;
+    border-top: 9px solid #fff;
+    border-left: 9px solid #fff;
+    transform:  rotateZ(135deg);
+
+}
+.seven-container .quest:hover .question p{
+    text-decoration: underline;
+}
+
+
+.seven-container .quest .question{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.seven-container .quest .answer{
+    padding: 0 1%;
+    max-height: 0;
+    font-size: 1rem;
+
+    overflow: hidden;
+    transition:  all .5s ease-in;
+}
+
+.seven-container .quest .answer.open{
+    max-height: 4rem;
+    margin-top: 1rem;
+    
+}
+
+.eight-container{
+    padding: 3%;
+    color: #fafafa;
+    font-size: .6rem;
+    text-align: center;
+}
+
+.eight-container p{
+    margin-bottom: .4rem;
+}
+
+
+                            /*MEDIA QUERIES*/
+
+@media(max-width: 768px){
+
+   
+    .first-container .enquadra img{
+        width: 65%;
+    }
+    .first-container .text-container .same{
+        width: 100%;
+    }
+    .first-container .text-container .same h1{
+        font-size: 1rem;
+    }
+
+    .first-container .text-container button{
+        padding: 2% 5%;
+    }
+   
+    .second-container .second-top{
+        flex-direction: column;
+    }
+
+    .second-container .second-top .text{
+        width: 82%;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        transform: scale(0.85);
+    }
+
+    .second-container .second-bottom::before{
+        height: auto;
+        top: 2%;
+        bottom: 2%;
+        width: 6px;
+        left: 49%;
+        z-index: 0;
+    }
+
+    .second-container .second-bottom, #last{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .second-container .second-bottom .card{
+        width: 90%;
+        transform-origin: center;
+    }
+
+    .second-container .second-bottom .card h2{
+        font-size: 1.5rem;
+    }
+
+    .second-container .second-bottom .card p{
+        font-size: 1rem;
+    }
+
+    .third-container .box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .third-container .box .box-image{
+        width: 60%;
+    }
+
+    .third-container .box .box-image img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .third-container .box .box-text{
+        width: 80%;
+    }
+
+    .third-container .box .box-text h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .third-container .box .box-text p{
+        width: 100%;
+    }
+
+    .fourth-container h2{
+        width: 100%;
+    }
+
+    .fourth-container .card{
+        width: 78%;
+    }
+
+    .five-container .depoiment{
+        flex-direction: column;
+    }
+
+    .five-container .depoiment-image{
+        width: 100%;
+    }
+
+    .five-container .depoiment.purple .depoiment-image img{
+        margin-top: -25%;
+        width: 100%;
+    }
+    
+
+    .five-container .depoiment-text{
+        width: 100%;
+    }
+    .five-container .depoiment-text p{
+        width: 100%;
+        font-size: 1.2rem;
+        text-align: center;
+       margin-bottom: 1rem;
+    }
+
+    .five-container .depoiment.purple{
+        flex-direction: column-reverse;
+    }
+
+    .five-container .depoiment.purple .depoiment-text p{
+        transform: translateY(-45%);
+        text-align: center;
+    }
+    .six-container .title-six{
+        font-size: 1.7rem;
+        letter-spacing: 2px;
+    }
+
+    .six-container .container-six{
+        flex-direction: column;
+    }
+
+    .six-container .container-six .container-img{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .six-container .container-six .container-img img{
+        width: 50%;
+    }
+
+    .six-container .container-six .container-text p{
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+
+    
+}
