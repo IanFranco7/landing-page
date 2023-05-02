@@ -8,7 +8,7 @@
 
 body{
     background-color: black;
-    overflow-x: visible;
+    overflow-x: hidden;
 }
 
 
@@ -491,7 +491,7 @@ button{
 }
 
 .six-container .box-button button{
-    width: 30%;
+    width: 100%;
 }
 
                                         /*SEVEN CONTAINER*/
@@ -559,7 +559,6 @@ button{
 .seven-container .quest .answer.open{
     max-height: 4rem;
     margin-top: 1rem;
-    
 }
 
 .eight-container{
@@ -580,17 +579,19 @@ button{
 
    
     .first-container .enquadra img{
-        width: 65%;
+        width: 85%;
     }
     .first-container .text-container .same{
         width: 100%;
     }
     .first-container .text-container .same h1{
-        font-size: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 2.5rem;
     }
 
     .first-container .text-container button{
         padding: 2% 5%;
+        font-size: 1.18rem;
     }
    
     .second-container .second-top{
@@ -600,8 +601,8 @@ button{
     .second-container .second-top .text{
         width: 82%;
         flex-direction: column;
-        margin-bottom: 3rem;
-        transform: scale(0.85);
+        margin-bottom: 3.3rem;
+        transform: scale(0.84);
     }
 
     .second-container .second-bottom::before{
@@ -723,7 +724,15 @@ button{
         font-size: 1rem;
         text-align: center;
     }
+
+    .six-container .box-button button{
+        width: 100%;
+    }
     
+    .seven-container .quest .answer.open{
+        max-height: 5.5rem;
+        margin-top: 1rem;
+    }
 
     
 }
