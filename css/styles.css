@@ -577,7 +577,9 @@ button{
 
 @media(max-width: 768px){
 
-   
+    .first-container{
+        min-height: 60vh;
+    }
     .first-container .enquadra img{
         width: 85%;
     }
